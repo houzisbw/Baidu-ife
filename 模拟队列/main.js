@@ -26,7 +26,6 @@ function leftIn(){
     }
     //生成li元素
     var li = document.createElement("li");
-    li.setAttribute("style","float:left;margin:10px;width:50px;height:50px;background-color: red;color:white;text-align: center;line-height: 50px;font-size: 20px;border-radius: 5px;")
     li.innerText = value;
     //插入元素
     var ul = document.getElementById("list");
@@ -50,7 +49,6 @@ function rightIn(){
     }
     //生成li元素
     var li = document.createElement("li");
-    li.setAttribute("style","float:left;margin:10px;width:50px;height:50px;background-color: red;color:white;text-align: center;line-height: 50px;font-size: 20px;border-radius: 5px;")
     li.innerText = value;
     //插入元素
     var ul = document.getElementById("list");
