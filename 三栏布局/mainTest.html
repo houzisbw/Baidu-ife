@@ -1,0 +1,41 @@
+<!--目标：左右栏定宽，中间自适应宽度-->
+<!--原理：左右2栏浮动定位，中间栏设置左右margin即可,给wrapper设置min-height防止网页过度缩小布局混乱-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="test.css" type="text/css">
+</head>
+<body>
+    <div class="wrapper clear">
+        <div class="left">
+            <div class="group-logo">
+            </div>
+            <div class="group-name">
+                网易游戏
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-logo">
+            </div>
+            <div class="right-logo">
+            </div>
+            <div class="right-logo">
+            </div>
+            <div class="right-logo">
+            </div>
+        </div>
+        <!--必须放最后，因为如果放前面，则该div会占满整行(因为不是浮动元素)，导致left right下移-->
+        <div class="mid">
+            第三关第三关法第三方第三方是的第三关
+            第三关法第三方第三方是的第三关第三关
+            法第三方第三方是的第三关第三关法第三
+            方第三方是的第三关第三关法第三方第三
+            方是的第三关第三关法第三方第三方是的
+            第三关第三关法第三方第三方是的第三关
+            第三关法第三方第三方是的
+        </div>
+    </div>
+</body>
+</html>
