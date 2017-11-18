@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+}
+.clear{
+    zoom:1;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.bg{
+    background-color: #B94A48;
+    border: 1px solid #5890AD;
+    padding: 15px 20px;
+    /*上外边距为10px，不是20，主要是float的div外边距不会合并，所以除以2*/
+    margin: 10px 0;
+}
+.row{
+    margin-right: -8px;
+    margin-left: -8px;
+    /*上外边距为10px，不是20，主要是float的div外边距不会合并*/
+    margin-top: 10px;
+}
+.padding-fix{
+    padding-left: 10px;
+    padding-right: 10px;
+
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="test.css" type="text/css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <!--此处设置2个col的意思是：当屏幕宽度大于sm的值，col-sm起作用，当小于sm的值，col-xs起作用-->
+        <div class="col-sm-4 col-xs-6 padding-fix">
+            <!--这里包一层div的原因是col-的div无法设置margin，而这个div包进来就会把外层的padding当成margin(看上去像是)-->
+            <!--修改外层div的padding则相当于修改内层div的margin-->
+            <div class="bg">
+                col-sm-4 col-xs-6
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-6 padding-fix">
+            <div class="bg">
+                col-sm-4 col-xs-6
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 padding-fix">
+            <div class="bg">
+                col-sm-4 col-xs-12
+            </div>
+        </div>
+    </div>
+    <!--第二行-->
+    <div class="row">
+        <div class="col-sm-3 col-xs-3 padding-fix">
+            <div class="bg">
+                col-sm-3 col-xs-3
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-6 padding-fix">
+            <div class="bg">
+                col-sm-6 col-xs-6
+            </div>
+        </div>
+        <div class="col-sm-3 col-xs-3 padding-fix">
+            <div class="bg">
+                col-sm-3 col-xs-3
+            </div>
+        </div>
+    </div>
+    <!--第三行-->
+    <div class="row">
+        <div class="col-sm-1 col-xs-2 padding-fix">
+            <div class="bg">
+                col-sm-3
+            </div>
+        </div>
+        <div class="col-sm-1 col-xs-2 padding-fix">
+            <div class="bg">
+                col-sm-3
+            </div>
+        </div>
+        <div class="col-sm-2 col-xs-8 padding-fix">
+            <div class="bg">
+                col-sm-3
+            </div>
+        </div>
+        <div class="col-sm-2 col-xs-3 padding-fix">
+            <div class="bg">
+                col-sm-3
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-3 padding-fix">
+            <div class="bg">
+                col-sm-3
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./test.js"></script>
+</body>
+</html>
