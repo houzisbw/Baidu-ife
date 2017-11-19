@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+}
+.clear{
+    zoom:1;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+label{
+    margin-right: 100px;
+    margin-left: 5px;
+}
+.wrap{
+    margin:100px 0 20px 100px;
+}
+.input-wrap{
+    height:50px;
+    line-height: 50px;
+}
+.desc{
+    width:100px;
+    height:50px;
+    float:left;
+    text-align: right;
+    margin-right: 20px;
+}
+.input-ele{
+    float:left;
+    width:500px;
+}
+
+.selection{
+    margin-left: 100px;
+}
+.school{
+    margin-top: 30px;
+}
+#work{
+    display: none;
+}
+.dropdown{
+    float:left;
+}
+.text{
+    float:left;
+}
+select{
+    margin-right: 10px;
+}
+
