@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+}
+.clear{
+    zoom:1;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.wrap{
+    height:40px;
+    width:100%;
+}
+.insert-node-value{
+    display: inline-block;
+    margin-right: 10px;
+}
+#clear{
+    margin-left: 5px;
+    margin-right: 20px;
+}
+/*二叉树基本css样式*/
+.node-basic{
+    width:50px;
+    height:50px;
+    background-color: #5890AD;
+    border-radius: 10px;
+    color:#fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-family: '微软雅黑';
+    z-index: 100;
+}
+/*二叉树根节点样式*/
+.node-root {
+    top:10%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+/*二叉树左侧节点样式*/
+.node-left{
+    position: absolute;
+    left:-100px;
+    top:80px;
+}
+/*二叉树右侧节点样式*/
+.node-right{
+    position: absolute;
+    left:100px;
+    top:80px;
+}
+/*2个节点连线的样式*/
+.line-left{
+    position: absolute;
+    left:50%;
+    top:20%;
+    height:4px;
+    width:100px;
+    background-color: #5890AD;
+    transform: rotate(-30deg);
+    transform-origin: 0 0 ;
+}
+.line-right{
+    position: absolute;
+    left:50%;
+    top:20%;
+    height:4px;
+    width:100px;
+    background-color: #5890AD;
+    transform: rotate(-150deg);
+    transform-origin: 0 0 ;
+}
+/*遍历二叉树时高亮节点的样式*/
+.highlight-node{
+    background-color: #B94A48;
+}
