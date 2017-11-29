@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发红包看照片</title>
+    <link rel="stylesheet" href="test.css" type="text/css">
+</head>
+<body>
+<div class="header">
+    <!--logo-->
+    <div class="logo">
+        <div class="logo-small">
+        </div>
+    </div>
+    <!--搜索登录部分-->
+    <div class="search-login">
+        <div class="search-input">
+            <input type="text" id="search-input">
+        </div>
+        <div class="login">
+            <a href="#"  class="login-img">
+                <img src="./images/login.png">
+            </a>
+            <a href="#" class="login-word">登录</a>
+        </div>
+    </div>
+</div>
+<div class="container clear">
+    <!--侧栏-->
+    <div class="aside">
+        <!--个人信息-->
+        <div class="personal-info">
+            <div class="personal-img">
+            </div>
+            <div class="personal-name">
+                ABC123
+            </div>
+        </div>
+        <!--收藏粉丝数-->
+        <div class="collection">
+            <div class="collection-detail">
+                <p class="num">110</p>
+                <p class="word">收藏</p>
+            </div>
+            <div class="follower-detail">
+                <p class="num">313</p>
+                <p class="word">粉丝</p>
+            </div>
+        </div>
+        <!--个人栏目部分-->
+        <div class="category">
+            <ul>
+                <li class="top-level personal-sheet">
+                    个人报表
+                </li>
+                <!--个人报表的子栏-->
+                <li class="top-level-sub">
+                    <ul>
+                        <li class="second-level">
+                            <span class="arrow-left"></span>
+                            <span class="folder-close"></span>
+                            文件一
+                        </li>
+                        <li class="second-level">
+                            <span class="arrow-left"></span>
+                            <span class="folder-close"></span>
+                            文件二
+                        </li>
+                        <!--文件2的子栏-->
+                        <li class="second-level-sub">
+                            <ul>
+                                <li class="third-level">文档1</li>
+                                <li class="third-level">文档2</li>
+                            </ul>
+                        </li>
+                        <li class="second-level">
+                            <span class="arrow-left"></span>
+                            <span class="folder-close"></span>
+                            文件二
+                        </li>
+                    </ul>
+                </li>
+                <li class="top-level personal-collection">
+                    个人收藏
+                </li>
+                <!--个人收藏的子栏-->
+                <li class="top-level-sub">
+                    <ul>
+                        <li class="second-level">
+                            <span class="arrow-left"></span>
+                            <span class="folder-close"></span>
+                            文件一
+                        </li>
+                        <li class="second-level">
+                            <span class="arrow-left"></span>
+                            <span class="folder-close"></span>
+                            文件二
+                        </li>
+                        <!--文件2的子栏-->
+                        <li class="second-level-sub">
+                            <ul>
+                                <li class="third-level">文档1</li>
+                                <li class="third-level">文档2</li>
+                            </ul>
+                        </li>
+                        <li class="second-level">
+                            <span class="arrow-left"></span>
+                            <span class="folder-close"></span>
+                            文件二
+                        </li>
+                    </ul>
+                </li>
+                <li class="top-level my-share">
+                    我的分享
+                </li>
+                <!--我的分享的子栏-->
+                <li class="top-level-sub">
+                    <ul>
+                        <li class="second-level">
+                            <span class="arrow-left"></span>
+                            <span class="folder-close"></span>
+                            文件一
+                        </li>
+                        <li class="second-level">
+                            <span class="arrow-left"></span>
+                            <span class="folder-close"></span>
+                            文件二
+                        </li>
+                        <!--文件2的子栏-->
+                        <li class="second-level-sub">
+                            <ul>
+                                <li class="third-level">文档1</li>
+                                <li class="third-level">文档2</li>
+                            </ul>
+                        </li>
+                        <li class="second-level">
+                            <span class="arrow-left"></span>
+                            <span class="folder-close"></span>
+                            文件二
+                        </li>
+                    </ul>
+                </li>
+                <li class="top-level img-lib">
+                    图库
+                </li>
+                <!-- 图库记录的子栏-->
+                <li class="top-level-sub">
+                    <ul>
+                        <li class="second-level">
+                            <span class="arrow-left"></span>
+                            <span class="folder-close"></span>
+                            文件一
+                        </li>
+                        <li class="second-level">
+                            <span class="arrow-left"></span>
+                            <span class="folder-close"></span>
+                            文件二
+                        </li>
+                        <!--文件2的子栏-->
+                        <li class="second-level-sub">
+                            <ul>
+                                <li class="third-level">文档1</li>
+                                <li class="third-level">文档2</li>
+                            </ul>
+                        </li>
+                        <li class="second-level">
+                            <span class="arrow-left"></span>
+                            <span class="folder-close"></span>
+                            文件二
+                        </li>
+                    </ul>
+                </li>
+                <li class="top-level growth-record">
+                    成长记录
+                </li>
+                <!-- 成长记录的子栏-->
+                <li class="top-level-sub">
+                    <ul>
+                        <li class="second-level">
+                            <span class="arrow-left"></span>
+                            <span class="folder-close"></span>
+                            文件一
+                        </li>
+                        <li class="second-level">
+                            <span class="arrow-left"></span>
+                            <span class="folder-close"></span>
+                            文件二
+                        </li>
+                        <!--文件2的子栏-->
+                        <li class="second-level-sub">
+                            <ul>
+                                <li class="third-level">文档1</li>
+                                <li class="third-level">文档2</li>
+                            </ul>
+                        </li>
+                        <li class="second-level">
+                            <span class="arrow-left"></span>
+                            <span class="folder-close"></span>
+                            文件二
+                        </li>
+                    </ul>
+                </li>
+                <li class="top-level account">
+                    账户信息
+                </li>
+                <!--账户信息的子栏-->
+                <li class="top-level-sub">
+                    <ul>
+                        <li class="second-level">
+                            <span class="arrow-left"></span>
+                            <span class="folder-close"></span>
+                            文件一
+                        </li>
+                        <li class="second-level">
+                            <span class="arrow-left"></span>
+                            <span class="folder-close"></span>
+                            文件二
+                        </li>
+                        <!--文件2的子栏-->
+                        <li class="second-level-sub">
+                            <ul>
+                                <li class="third-level">文档1</li>
+                                <li class="third-level">文档2</li>
+                            </ul>
+                        </li>
+                        <li class="second-level">
+                            <span class="arrow-left"></span>
+                            <span class="folder-close"></span>
+                            文件二
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--右边主内容区域-->
+    <div class="right-content">
+        <!--banner-->
+        <div class="right-banner">
+            <span><a href="#">C站</a> / <a href="#">个人报表</a> / <a href="#">文件一</a> / <a href="#" class="current-level">文档一</a></span>
+        </div>
+        <!--主体内容区域-->
+        <div class="right-main-content">
+            <!--搜索区域-->
+            <div class="right-search">
+                <div class="right-search-wrap">
+                    <!--上半部分-->
+                    <div class="right-search-up">
+                        <!--查询项-->
+                        <div class="search-item">
+                            <span>查询项</span>
+                            <select id="item">
+                                <option>第一项</option>
+                                <option>第二项</option>
+                            </select>
+                        </div>
+                        <!--买方-->
+                        <div class="buyer">
+                            <span>买方</span>
+                            <select id="buyer">
+                                <option>小A</option>
+                                <option>小C</option>
+                            </select>
+                            <!--换字的logo-->
+                            <div class="switch">
+                                <div class="switch-word">换</div>
+                            </div>
+                        </div>
+                        <!--日期-->
+                        <div class="search-date">
+                            <span>日期</span>
+                            <input type="text" id="date" placeholder="2016-04-01">
+                        </div>
+                        <!--总耗时-->
+                        <div class="total-time">
+                            <span>总耗时</span>
+                            <select id="time-consume">
+                                <option>1天</option>
+                                <option>2天</option>
+                                <option>3天</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--下半部分-->
+                    <div class="right-search-down">
+                        <!--查询项-->
+                        <div class="search-item">
+
+                        </div>
+                        <!--买方-->
+                        <div class="buyer">
+                            <span>卖方</span>
+                            <select id="seller">
+                                <option>小C</option>
+                                <option>小B</option>
+                            </select>
+                        </div>
+                        <!--人数-->
+                        <div class="people-num">
+                            <span>人数</span>
+                            <select id="person">
+                                <option>10 人</option>
+                                <option>11 人</option>
+                            </select>
+                        </div>
+                        <!--成交数量-->
+                        <div class="bargin">
+                            <span>成交项</span>
+                            <select id="bargin">
+                                <option>10 项</option>
+                                <option>11 项</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!--搜索按钮-->
+                <div class="right-search-button">
+                    <button id="search">搜索</button>
+                </div>
+            </div>
+            <!--历史查询区域-->
+            <div class="history clear">
+                <!--上一项-->
+                <div class="prev-item">
+                </div>
+                <!--每一项-->
+                <ul class="history-item">
+                    <li class="history-active">
+                        <p class="history-time">
+                            10:00 am
+                        </p>
+                        <p class="history-price">
+                            <span class="price-type">¥</span>
+                            <span class="price-num">1200</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="history-time">
+                            11:00 am
+                        </p>
+                        <p class="history-price">
+                            <span class="price-type">¥</span>
+                            <span class="price-num">1100</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="history-time">
+                            1:00 am
+                        </p>
+                        <p class="history-price">
+                            <span class="price-type">¥</span>
+                            <span class="price-num">1400</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="history-time">
+                            9:00 am
+                        </p>
+                        <p class="history-price">
+                            <span class="price-type">¥</span>
+                            <span class="price-num">1600</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="history-time">
+                            10:00 am
+                        </p>
+                        <p class="history-price">
+                            <span class="price-type">¥</span>
+                            <span class="price-num">1200</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="history-time">
+                            19:00 am
+                        </p>
+                        <p class="history-price">
+                            <span class="price-type">¥</span>
+                            <span class="price-num">14500</span>
+                        </p>
+                    </li>
+                </ul>
+                <!--下一项-->
+                <div class="next-item">
+                </div>
+                <!--历史查询-->
+                <div class="history-search">
+                    <p class="history-word">历史查询</p>
+                </div>
+            </div>
+            <!--成交量区域-->
+            <div class="bargin-area">
+                <!--标题-->
+                <p class="bargin-title">
+                    2016年4月份统计
+                </p>
+                <!--每一项统计值-->
+                <div class="bargin-item bargin-item-1">
+                    <p class="bargin-num">133311</p>
+                    <p class="bargin-word">成交量</p>
+                    <div class="float-bg bg-1">
+                    </div>
+                </div>
+                <div class="bargin-item bargin-item-2">
+                    <p class="bargin-num">133311</p>
+                    <p class="bargin-word">成交量</p>
+                    <div class="float-bg bg-2">
+                    </div>
+                </div>
+                <div class="bargin-item bargin-item-3">
+                    <p class="bargin-num">133311</p>
+                    <p class="bargin-word">成交量</p>
+                    <div class="float-bg bg-3">
+                    </div>
+                </div>
+                <div class="bargin-item bargin-item-4">
+                    <p class="bargin-num">133311</p>
+                    <p class="bargin-word">成交量</p>
+                    <div class="float-bg bg-4">
+                    </div>
+                </div>
+            </div>
+            <!--项目区域-->
+            <div class="project">
+                <div class="project-left">
+                    <!--banner-->
+                    <div class="project-banner">
+                        第一组项目
+                    </div>
+                    <!--选项卡区域 :4个-->
+                    <div class="tab-cards">
+                        <ul class="tabs">
+                            <li class="tab-active">项目一</li>
+                            <li>项目一</li>
+                            <li>项目一</li>
+                            <li>项目一</li>
+                            <li>项目一</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-1">
+                            <table>
+                                <tr>
+                                    <td>购买材料一</td>
+                                    <td>购买材料一</td>
+                                    <td>购买材料一</td>
+                                    <td>购买材料一</td>
+                                </tr>
+                                <tr>
+                                    <td>购买材料一</td>
+                                    <td>购买材料一</td>
+                                    <td>购买材料一</td>
+                                    <td>购买材料一</td>
+                                </tr>
+                                <tr>
+                                    <td>购买材料一</td>
+                                    <td>购买材料一</td>
+                                    <td>购买材料一</td>
+                                    <td>购买材料一</td>
+                                </tr>
+                                <tr>
+                                    <td>购买材料一</td>
+                                    <td>购买材料一</td>
+                                    <td>购买材料一</td>
+                                    <td>购买材料一</td>
+                                </tr>
+                                <tr>
+                                    <td>购买材料一</td>
+                                    <td>购买材料一</td>
+                                    <td>购买材料一</td>
+                                    <td>购买材料一</td>
+                                </tr>
+                                <tr>
+                                    <td>购买材料一</td>
+                                    <td>购买材料一</td>
+                                    <td>购买材料一</td>
+                                    <td>购买材料一</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-1 tab-hide">
+                            tab-2
+                        </div>
+                        <div class="tab-1 tab-hide">
+                            tab-3
+                        </div>
+                        <div class="tab-1 tab-hide">
+                            tab-4
+                        </div>
+                        <div class="tab-1 tab-hide">
+                            tab-5
+                        </div>
+                        <div class="tab-1 tab-hide">
+                            tab-6
+                        </div>
+                    </div>
+                </div>
+                <div class="project-right">
+                    <!--banner-->
+                    <div class="project-banner">
+                        第一组项目
+                    </div>
+                    <div class="project-detail">
+                        <p class="project-title">
+                            标题
+                        </p>
+                        <p class="project-title-name">
+                            项目报表三
+                        </p>
+                        <div class="project-wrap">
+                            <div class="project-wrap-left">
+                                <p class="project-price">价格</p>
+                                <p class="project-price-num">¥ 158</p>
+                            </div>
+                            <div class="project-wrap-right">
+                                <p class="project-price">负责人</p>
+                                <p class="project-price-num">小 A</p>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <p class="project-price">详细描述</p>
+                            <p class="project-price-num">该项目的负责人目前是.....</p>
+                        </div>
+                        <div class="project-secret">
+                            <input id="secret" type="checkbox" checked="checked"><label for="secret" class="project-price">遵守保密协议</label>
+                            <button id="secret-search">搜索</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--日历品牌区域-->
+            <div class="calendar-brand">
+                <div class="calendar">
+                    <div class="project-banner">
+                        日历
+                    </div>
+                    <div class="calendar-wrap">
+                        <div class="calendar-input">
+                            <select id="calendar-year">
+                                <option>2016年</option>
+                                <option>2013年</option>
+                            </select>
+                            <select id="calendar-month">
+                                <option>4月</option>
+                                <option>5月</option>
+                            </select>
+                            <button class="calendar-month-next">
+                            </button>
+                            <select id="calendar-date">
+                                <option>标注日期</option>
+                                <option>标注日期</option>
+                            </select>
+                            <button id="today">
+                                返回今天
+                            </button>
+                        </div>
+                        <!--日历的table-->
+                        <div class="calendar-table">
+                            <table id="calendar-table">
+                                <tr class="calendar-row-top">
+                                    <th>一</th>
+                                    <th>二</th>
+                                    <th>三</th>
+                                    <th>四</th>
+                                    <th>五</th>
+                                    <th>六</th>
+                                    <th>日</th>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <p class="calendar-date-num ">1</p>
+                                        <p class="calendar-date-name weekend">愚人节</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num weekend">2</p>
+                                        <p class="calendar-date-name">廿五</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num weekend">3</p>
+                                        <p class="calendar-date-name">廿六</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="calendar-date-special">
+                                        <p class="calendar-date-num">1</p>
+                                        <p class="calendar-date-name ">廿七</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num">1</p>
+                                        <p class="calendar-date-name ">廿八</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num">1</p>
+                                        <p class="calendar-date-name ">廿九</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num">1</p>
+                                        <p class="calendar-date-name ">三月</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num">1</p>
+                                        <p class="calendar-date-name ">愚人节</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num weekend">2</p>
+                                        <p class="calendar-date-name">廿五</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num weekend">3</p>
+                                        <p class="calendar-date-name">廿六</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="calendar-date-special">
+                                        <p class="calendar-date-num">1</p>
+                                        <p class="calendar-date-name ">廿七</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num">1</p>
+                                        <p class="calendar-date-name ">廿八</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num">1</p>
+                                        <p class="calendar-date-name ">廿九</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num">1</p>
+                                        <p class="calendar-date-name ">三月</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num">1</p>
+                                        <p class="calendar-date-name ">愚人节</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num weekend">2</p>
+                                        <p class="calendar-date-name">廿五</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num weekend">3</p>
+                                        <p class="calendar-date-name">廿六</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="calendar-date-num">1</p>
+                                        <p class="calendar-date-name ">廿七</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num">1</p>
+                                        <p class="calendar-date-name ">廿八</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num">1</p>
+                                        <p class="calendar-date-name ">廿九</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num">1</p>
+                                        <p class="calendar-date-name ">三月</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num">1</p>
+                                        <p class="calendar-date-name ">愚人节</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num weekend">2</p>
+                                        <p class="calendar-date-name">廿五</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num weekend">3</p>
+                                        <p class="calendar-date-name">廿六</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="calendar-date-num">1</p>
+                                        <p class="calendar-date-name ">廿七</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num">1</p>
+                                        <p class="calendar-date-name ">廿八</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num">1</p>
+                                        <p class="calendar-date-name ">廿九</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num">1</p>
+                                        <p class="calendar-date-name ">三月</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num">1</p>
+                                        <p class="calendar-date-name ">愚人节</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num weekend">2</p>
+                                        <p class="calendar-date-name">廿五</p>
+                                    </td>
+                                    <td>
+                                        <p class="calendar-date-num weekend">3</p>
+                                        <p class="calendar-date-name">廿六</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="brand">
+                    <div class="project-banner">
+                        汽车行业品牌
+                    </div>
+                    <div class="car-data">
+                        <table id="car-data">
+                            <!--指定列的宽度，不用每个td去设置-->
+                            <colgroup class="col1"></colgroup>
+                            <colgroup class="col2"></colgroup>
+                            <colgroup class="col3"></colgroup>
+                            <tr>
+                                <th>排名</th>
+                                <th>品牌</th>
+                                <th>搜索指数</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>大众</td>
+                                <td>
+                                    <span class="car-num">48912001</span>
+                                    <span class="car-num-bar car-bar-data1"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>本田</td>
+                                <td>
+                                    <span class="car-num">28912001</span>
+                                    <span class="car-num-bar car-bar-data2"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>奥迪</td>
+                                <td>
+                                    <span class="car-num">18912001</span>
+                                    <span class="car-num-bar car-bar-data3"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>奥迪</td>
+                                <td>
+                                    <span class="car-num">18912001</span>
+                                    <span class="car-num-bar car-bar-data3"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>奥迪</td>
+                                <td>
+                                    <span class="car-num">18912001</span>
+                                    <span class="car-num-bar car-bar-data3"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>奥迪</td>
+                                <td>
+                                    <span class="car-num">18912001</span>
+                                    <span class="car-num-bar car-bar-data3"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>奥迪</td>
+                                <td>
+                                    <span class="car-num">18912001</span>
+                                    <span class="car-num-bar car-bar-data3"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>奥迪</td>
+                                <td>
+                                    <span class="car-num">18912001</span>
+                                    <span class="car-num-bar car-bar-data3"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>奥迪</td>
+                                <td>
+                                    <span class="car-num">18912001</span>
+                                    <span class="car-num-bar car-bar-data3"></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.7.2.min.js" type="text/javascript"></script>
+
+<script src="./test.js"></script>
+</body>
+</html>
