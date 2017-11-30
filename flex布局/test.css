@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+}
+.clear{
+    zoom:1;
+}
+/*重要，设置上一级的宽高，不会出现滚动条*/
+html,body{
+    height:100%;
+    width:100%;
+}
+body{
+    background-color: #eee;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+li{
+    list-style: none;
+}
+
+.container{
+    /*父容器设置为flex布局*/
+    display: flex;
+    display: -webkit-flex;
+    padding: 20px;
+    /*容器内元素按行排列*/
+    flex-direction: row;
+    /*元素超出宽度换行*/
+    flex-wrap: wrap;
+    /*一行内元素分布*/
+    justify-content:space-between;
+    /*定义项目在交叉轴上如何对齐*/
+    align-items:center;
+}
+.container div{
+    margin-bottom: 20px;
+    color:#fff;
+    text-align: center;
+}
+@media all and (max-width: 640px) {
+    .container{
+        align-items: flex-start;
+
+    }
+    /*排到最前面*/
+    .four{
+        order:-1;
+    }
+
+}
+.one{
+    width:150px;
+    height:120px;
+    background-color: red;
+}
+.two{
+    width:150px;
+    height:100px;
+    background-color: red;
+}
+.three{
+    width:150px;
+    height:40px;
+    background-color: red;
+}
+.four{
+    width:150px;
+    height:200px;
+    background-color: red;
+}
