@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+}
+.clear{
+    zoom:1;
+}
+/*重要，设置上一级的宽高，不会出现滚动条*/
+html,body{
+    height:100%;
+    width:100%;
+}
+body{
+    background-color: #eee;
+    min-width: 300px;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.table{
+    border-collapse: collapse;
+}
+.table-th{
+    background-color: grey;
+    color:#fff;
+    vertical-align: middle;
+    text-align: center;
+    width:100px;
+    height:50px;
+    border: 1px solid #616161;
+}
+.table-td{
+    width:100px;
+    height:50px;
+    padding:10px;
+    text-align: center;
+    vertical-align: middle;
+    color:#000;
+    border: 1px solid #616161;
+}
+.sortable{
+    position: relative;
+}
+
+.up{
+    position: absolute;
+    right:10%;
+    top:20%;
+    width:20px;
+    height:10px;
+    background: url(./images/up.png) center center no-repeat;
+    border:none;
+    outline: none;
+}
+.down{
+    position: absolute;
+    right:10%;
+    top:60%;
+    width:20px;
+    height:10px;
+    background: url(./images/down.png) center center no-repeat;
+    border:none;
+    outline: none;
+}
