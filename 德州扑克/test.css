@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+}
+.clear{
+    zoom:1;
+}
+/*重要，设置上一级的宽高，不会出现滚动条*/
+html,body{
+    height:100%;
+    width:100%;
+}
+body{
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.card ul li{
+    width:100px;
+    height:150px;
+    border: 1px solid #000;
+    float:left;
+    margin-right: 20px;
+    list-style: none;
+    border-radius: 10px;
+    position: relative;
+    background: url(./images/heart.png) 20% 20% no-repeat #fff;
+}
+.card{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+
+}
+.card ul li span{
+    position: absolute;
+    right:30%;
+    bottom:10%;
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+}
+.card-type{
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+.five-card-ul{
+    margin: 50px auto;
+}
+.desc{
+    position: absolute;
+    left:-140px;
+    top:60px;
+    color:#000;
+    font-size: 20px;
+}
+.desc-bottom{
+    position: absolute;
+    left:-140px;
+    top:360px;
+    color:#000;
+    font-size: 20px;
+}
