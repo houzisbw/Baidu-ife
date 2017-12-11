@@ -42,7 +42,8 @@ body{
     transition: all .8s;
     box-sizing: border-box;
 }
-/*上下2个边框*/
+/*上下2个边框，中间向2边扩散的效果是先将border放在left:50%的位置，然后
+left变到0，边框左移动，同时width变大到100%，看上去就像从中间扩散开一样*/
 .wrap:after{
     content: '';
     position: absolute;
