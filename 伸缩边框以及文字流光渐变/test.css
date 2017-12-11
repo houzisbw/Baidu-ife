@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+}
+.clear{
+    zoom:1;
+}
+/*重要，设置上一级的宽高，不会出现滚动条*/
+html,body{
+    height:100%;
+}
+
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+body{
+    font-family: "Microsoft YaHei";
+}
+.wrap{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:400px;
+    height:300px;
+}
+/*利用伪元素来生成div和边框*/
+/*左右2个边框*/
+.wrap:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 0;
+    border: 3px solid #147B96;
+    border-width: 0 3px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all .8s;
+    box-sizing: border-box;
+}
+/*上下2个边框*/
+.wrap:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border: 3px solid #147B96;
+    border-width: 3px 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all .8s;
+    box-sizing: border-box;
+}
+.wrap:hover:before{
+    height:100%;
+    top:0;
+    visibility: visible;
+}
+.wrap:hover:after{
+    width:100%;
+    left:0;
+    visibility: visible;
+}
+
+
+/*利用div模拟4个边框的写法，scaleX来缩放，但是对不齐也是醉了*/
+.wrap img{
+    width:100%;
+    height:100%;
+    transition: all 0.5s;
+}
+.wrap img:hover{
+    filter:blur(3px);
+    -webkit-filter: blur(3px);
+}
+.wrap:hover .line-horizontal{
+    /*从中心向2边伸缩*/
+    transform: scaleX(300);
+    display: block;
+    opacity: 1;
+}
+.line-horizontal{
+    position: relative;
+    left:50%;
+    height: 3px;
+    background-color: #fff;
+    width:1px;
+    opacity: 0;
+    transition: transform 1.5s;
+}
+.line-vertical{
+    position: relative;
+    top:-50.5%;
+    width:3px;
+    height:1px;
+    background-color:#fff;
+    opacity: 0;
+    transition: transform 1.5s;
+}
+.wrap:hover .line-vertical{
+    /*从中心向2边伸缩*/
+    transform: scaleY(202);
+    display: block;
+    opacity: 1;
+}
+.line-up{
+    top:-250px;
+}
+.line-down{
+    top:-50px;
+}
+.line-left{
+    left:50px;
+}
+.line-right{
+    left:347px;
+
+}
+.word{
+    color:#fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left:50%;
+    top:60%;
+    transform: translate(-50%,-50%);
+    width:300px;
+    transition: all 1.5s;
+    opacity: 0;
+
+    /*背景渐变*/
+    background-image: -webkit-linear-gradient(left, #147B96, #E6D205 25%, #147B96 50%, #E6D205 75%, #147B96);
+    /*文字填充为透明，这样可以显示背景色*/
+    -webkit-text-fill-color: transparent;
+    /*背景裁切，只在文字里显示背景色*/
+    -webkit-background-clip: text;
+    /*背景尺寸水平*2，方便动画效果的移动*/
+    -webkit-background-size: 200% 100%;
+    -webkit-animation: masked-animation 4s infinite linear;
+}
+@-webkit-keyframes masked-animation {
+    0%  { background-position: 0 0;}
+    100% { background-position: -100% 0;}
+}
+.wrap:hover .word{
+    top:50%;
+    opacity: 1;
+}
